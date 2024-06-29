@@ -22,5 +22,18 @@
 Это не значит, что задание сделано правильно, просто на данном этапе сложно иначе
 проверять результат.
 """
-
+result = []
 vlans = [10, 20, 30, 1, 2, 100, 10, 30, 3, 4, 10]
+vlans.sort()
+#print(sorted(vlans))
+print(vlans)
+i = 1
+for vlan in vlans:
+    if i < len(vlans):
+        #print(i)
+        if vlan != vlans[i]:
+            result.append(vlan)
+    i +=1
+if vlans[-1] != result[-1]:
+    result.append(vlans[-1])
+print(result)
