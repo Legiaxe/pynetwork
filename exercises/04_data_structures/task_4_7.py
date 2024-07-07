@@ -16,3 +16,8 @@
 """
 
 mac = "AAAA:BBBB:CCCC"
+
+mac_split = mac.split(":")
+convert_str = ''.join(mac_split)
+result = bin(int(convert_str,16))
+print (result[2:])
