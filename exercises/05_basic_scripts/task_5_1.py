@@ -46,3 +46,10 @@ london_co = {
         "routing": True,
     },
 }
+name_device = input("Введіть ім'я пристрою: ")
+if name_device == 'r1':
+    print(london_co["r1"])
+elif name_device == "r2":
+    print(london_co["r2"])
+elif name_device == "sw1":
+    print(london_co["sw1"])
