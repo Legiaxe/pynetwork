@@ -53,7 +53,11 @@ name_device = input("Введіть ім'я пристрою: ")
 keys = tuple(london_co[name_device].keys())
 print(type(keys))
 name_parametr = input(f"Введіть параметр {keys}")
+#var.1
+print(london_co[name_device].get(name_parametr,"Параметр не існує"))
+'''var.2
 if name_parametr not in keys:
     print("Параметр не існує")
 else:
     print(london_co[name_device][name_parametr])
+'''
